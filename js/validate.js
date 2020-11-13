@@ -5,10 +5,15 @@ Tarpan Patel Umass Lowell Computer Science, tarpan_patel@student.uml.edu
 Copyright (c) 2013 by Tarpan Patel. All rights reserved.
 11/12/20
 */   
-
+/*
+    Source:
+    https://jqueryvalidation.org/category/plugin/
+    https://jqueryvalidation.org/validate/
+    https://jqueryvalidation.org/category/methods/
+*/
 $(document).ready(function() {
 
-    // Check if inputs are a whole number.
+    // Check if inputs are a whole number. Source : https://jqueryvalidation.org/jQuery.validator.addMethod/
     $.validator.addMethod("validInt", function(value){
         if((value % 1) == 0){
             return true;
